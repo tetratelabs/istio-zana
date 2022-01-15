@@ -32,8 +32,8 @@ import (
 	plugin "github.com/golang/protobuf/protoc-gen-go/plugin"
 	"github.com/russross/blackfriday/v2"
 
+	"github.com/tetratelabs/istio-zana/pkg/protomodel"
 	googleapi "istio.io/gogo-genproto/googleapis/google/api"
-	"istio.io/tools/pkg/protomodel"
 )
 
 type outputMode int

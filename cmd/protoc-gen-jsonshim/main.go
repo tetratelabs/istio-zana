@@ -17,7 +17,7 @@ package main
 import (
 	"github.com/gogo/protobuf/vanity/command"
 
-	"istio.io/tools/cmd/protoc-gen-jsonshim/jsonshim"
+	"github.com/tetratelabs/istio-zana/cmd/protoc-gen-jsonshim/jsonshim"
 )
 
 func main() {

@@ -24,10 +24,10 @@ import (
 	"sync"
 	"time"
 
+	"github.com/tetratelabs/istio-zana/isotope/convert/pkg/graph/script"
+	"github.com/tetratelabs/istio-zana/isotope/convert/pkg/graph/svctype"
+	"github.com/tetratelabs/istio-zana/isotope/service/pkg/srv/prometheus"
 	"istio.io/pkg/log"
-	"istio.io/tools/isotope/convert/pkg/graph/script"
-	"istio.io/tools/isotope/convert/pkg/graph/svctype"
-	"istio.io/tools/isotope/service/pkg/srv/prometheus"
 )
 
 func init() {

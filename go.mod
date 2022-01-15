@@ -1,4 +1,4 @@
-module istio.io/tools
+module github.com/tetratelabs/istio-zana
 
 go 1.17
 

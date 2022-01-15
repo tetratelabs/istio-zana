@@ -15,8 +15,8 @@
 package main
 
 import (
-	"istio.io/tools/cmd/testlinter/rules"
-	"istio.io/tools/pkg/checker"
+	"github.com/tetratelabs/istio-zana/cmd/testlinter/rules"
+	"github.com/tetratelabs/istio-zana/pkg/checker"
 )
 
 // LintRulesList is a map that maps test type to list of lint rules. Linter applies corresponding

@@ -19,7 +19,7 @@ import (
 	"reflect"
 	"testing"
 
-	"istio.io/tools/isotope/convert/pkg/graph/svctype"
+	"github.com/tetratelabs/istio-zana/isotope/convert/pkg/graph/svctype"
 )
 
 func TestService_UnmarshalJSON(t *testing.T) {

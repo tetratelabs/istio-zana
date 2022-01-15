@@ -24,9 +24,9 @@ import (
 
 	"istio.io/pkg/log"
 
-	"istio.io/tools/isotope/convert/pkg/consts"
-	"istio.io/tools/isotope/service/pkg/srv"
-	"istio.io/tools/isotope/service/pkg/srv/prometheus"
+	"github.com/tetratelabs/istio-zana/isotope/convert/pkg/consts"
+	"github.com/tetratelabs/istio-zana/isotope/service/pkg/srv"
+	"github.com/tetratelabs/istio-zana/isotope/service/pkg/srv/prometheus"
 )
 
 const (
@@ -57,7 +57,6 @@ var stringToLevel = map[string]log.Level{
 	"fatal": log.FatalLevel,
 	"none":  log.NoneLevel,
 }
-
 
 func main() {
 	flag.Parse()

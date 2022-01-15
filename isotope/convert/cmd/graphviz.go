@@ -20,8 +20,8 @@ import (
 	"github.com/spf13/cobra"
 	"sigs.k8s.io/yaml"
 
-	"istio.io/tools/isotope/convert/pkg/graph"
-	"istio.io/tools/isotope/convert/pkg/graphviz"
+	"github.com/tetratelabs/istio-zana/isotope/convert/pkg/graph"
+	"github.com/tetratelabs/istio-zana/isotope/convert/pkg/graphviz"
 )
 
 // graphvizCmd represents the graphviz command

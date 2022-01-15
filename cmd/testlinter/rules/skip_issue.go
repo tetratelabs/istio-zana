@@ -18,7 +18,7 @@ import (
 	"go/ast"
 	"go/token"
 
-	"istio.io/tools/pkg/checker"
+	"github.com/tetratelabs/istio-zana/pkg/checker"
 )
 
 // SkipIssue requires that a `t.Skip()` call in test function should contain url to a issue.

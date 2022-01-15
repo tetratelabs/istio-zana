@@ -21,8 +21,8 @@ import (
 
 	"istio.io/pkg/log"
 
-	"istio.io/tools/isotope/convert/pkg/consts"
-	"istio.io/tools/isotope/convert/pkg/graph/size"
+	"github.com/tetratelabs/istio-zana/isotope/convert/pkg/consts"
+	"github.com/tetratelabs/istio-zana/isotope/convert/pkg/graph/size"
 )
 
 func sendRequest(

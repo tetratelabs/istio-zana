@@ -20,9 +20,9 @@ import (
 
 	"istio.io/pkg/log"
 
-	"istio.io/tools/isotope/convert/pkg/graph/svc"
-	"istio.io/tools/isotope/convert/pkg/graph/svctype"
-	"istio.io/tools/isotope/service/pkg/srv/prometheus"
+	"github.com/tetratelabs/istio-zana/isotope/convert/pkg/graph/svc"
+	"github.com/tetratelabs/istio-zana/isotope/convert/pkg/graph/svctype"
+	"github.com/tetratelabs/istio-zana/isotope/service/pkg/srv/prometheus"
 )
 
 // Handler handles the default endpoint by emulating its Service.
@@ -59,7 +59,7 @@ func (h Handler) ServeHTTP(writer http.ResponseWriter, request *http.Request) {
 		err := execute(step, forwardableHeader, h.ServiceTypes)
 		if err != nil {
 			log.Errorf("%s", err)
-			respond(http.StatusInternalServerError, err.Error() + "\n")
+			respond(http.StatusInternalServerError, err.Error()+"\n")
 			return
 		}
 	}

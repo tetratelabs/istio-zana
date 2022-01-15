@@ -19,7 +19,7 @@ import (
 
 	"github.com/google/uuid"
 
-	"istio.io/tools/isotope/convert/pkg/graph/svc"
+	"github.com/tetratelabs/istio-zana/isotope/convert/pkg/graph/svc"
 )
 
 func generateRbacPolicy(svc svc.Service, allowAll bool) string {
