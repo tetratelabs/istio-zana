@@ -20,7 +20,7 @@ import (
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
 	v1alpha1 "istio.io/api/meta/v1alpha1"
-	defaults "istio.io/tools/cmd/kubetype-gen/testdata/test_input/positive/defaults"
+	defaults "github.com/tetratelabs/istio-zana/cmd/kubetype-gen/testdata/test_input/positive/defaults"
 )
 
 //

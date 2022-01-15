@@ -127,7 +127,9 @@ var (
 	// manually configuring builds
 	all = flag.Bool("all", false, "combine all the matched outputs in a single file; the 'all' section must be specified in the configuration")
 
-	crd = flag.Bool("crd", false, "generate CRD validation yaml based on the Istio protos and cue files")
+	crd         = flag.Bool("crd", false, "generate CRD validation yaml based on the Istio protos and cue files")
+	crdDir      = flag.String("crd-dir", "kubernetes", "destination dir of the generated CRD file")
+	crdFilename = flag.String("crd-filename", "customresourcedefinitions", "filename of the generated CRD file")
 
 	snake = flag.String("snake", "", "comma-separated fields to add a snake case")
 
@@ -298,10 +300,10 @@ func main() {
 		if c.Crd == nil {
 			log.Fatalf("Must specify the crd section in the configuration")
 		}
-		if c.Crd.Filename == "" {
+		if *crdFilename != "" {
 			c.Crd.Filename = "customresourcedefinitions"
 		}
-		if c.Crd.Dir == "" {
+		if *crdDir != "" {
 			c.Crd.Dir = "kubernetes"
 		}
 		builder.genCRD()
